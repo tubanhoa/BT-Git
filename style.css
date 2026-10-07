@@ -1,0 +1,137 @@
+/* Cấu hình chung cho trang */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 24px 16px;
+    background: linear-gradient(135deg, #f8fafc, #e0f2fe);
+    color: #1f2937;
+}
+
+section {
+    background: #ffffff;
+    padding: 20px 18px;
+    margin: 0 auto 20px;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+}
+
+h2 {
+    color: #1d4ed8;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 8px;
+    margin-top: 0;
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+/* ==========================================
+   2. Thay đổi kiểu đánh dấu danh sách (square)
+   ========================================== */
+.list-square {
+    list-style-type: square;
+}
+
+/* ==========================================
+   3. Thay đổi kiểu đánh dấu có thứ tự (upper-roman)
+   ========================================== */
+.list-roman {
+    list-style-type: upper-roman;
+}
+
+/* ==========================================
+   4. Sử dụng hình ảnh làm dấu đánh dấu
+   ========================================== */
+.list-image {
+    list-style-image: url('https://api.iconify.design/heroicons:check-16-solid.svg');
+}
+
+/* ==========================================
+   5. Thay đổi vị trí dấu đánh dấu
+   ========================================== */
+.list-outside {
+    list-style-position: outside;
+    background-color: #eef2f5;
+    padding: 15px 15px 15px 40px;
+    border-radius: 8px;
+}
+
+.list-inside {
+    list-style-position: inside;
+    background-color: #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* ==========================================
+   6. Sử dụng thuộc tính rút gọn list-style
+   ========================================== */
+.list-shorthand {
+    list-style: square inside url('https://api.iconify.design/heroicons:star-16-solid.svg');
+    background: #fef3c7;
+    padding: 15px 15px 15px 40px;
+    border-radius: 8px;
+}
+
+/* ==========================================
+   7. Tạo kiểu danh sách với màu sắc
+   ========================================== */
+.list-colored {
+    background-color: #1e1e2e;
+    padding: 20px 20px 20px 40px;
+    border-radius: 8px;
+    list-style-type: disc;
+}
+
+.list-colored li {
+    color: #a6e3a1;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* ==========================================
+   8. Bài tập tổng hợp: Lộ trình học lập trình Web
+   ========================================== */
+.web-roadmap {
+    list-style: square inside;
+    background-color: #2b2d42;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.web-roadmap li {
+    color: #edf2f4;
+    font-size: 16px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background-color: #8d99ae;
+    border-radius: 4px;
+}
+
+.web-roadmap li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px 10px;
+    }
+
+    section {
+        padding: 16px 12px;
+    }
+
+    .list-outside,
+    .list-inside,
+    .list-shorthand,
+    .list-colored,
+    .web-roadmap {
+        padding-left: 18px;
+    }
+}

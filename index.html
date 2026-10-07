@@ -3,115 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lịch họp công ty</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #eff6ff, #f8fafc);
-            color: #1f2937;
-            padding: 30px 15px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: #ffffff;
-            border-radius: 14px;
-            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
-            padding: clamp(20px, 3vw, 32px);
-        }
-
-        h1 {
-            margin: 0 0 18px;
-            color: #1d4ed8;
-            text-align: center;
-            font-size: clamp(1.8rem, 3vw, 2.4rem);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-
-        th, td {
-            border: 1px solid #d1d5db;
-            padding: 12px 14px;
-            text-align: left;
-            vertical-align: top;
-        }
-
-        th {
-            background: #dbeafe;
-            color: #1e3a8a;
-            font-weight: 700;
-        }
-
-        tbody tr:nth-child(even) {
-            background: #f8fafc;
-        }
-
-        tbody tr:hover {
-            background: #eff6ff;
-        }
-
-        @media (max-width: 640px) {
-            body {
-                padding: 20px 10px;
-            }
-
-            .container {
-                padding: 15px 10px;
-                border-radius: 10px;
-            }
-
-            th, td {
-                padding: 10px 8px;
-                font-size: 0.92rem;
-            }
-        }
-    </style>
+    <title>Bài tập Định kiểu Danh sách CSS</title>
+    <!-- 1. Liên kết file CSS với HTML -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Lịch họp công ty</h1>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Ngày</th>
-                    <th>Giờ</th>
-                    <th>Nội dung cuộc họp</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="2">12/10/2026</td>
-                    <td>08:30 - 10:00</td>
-                    <td>Họp giao ban đầu tuần</td>
-                </tr>
-                <tr>
-                    <td>10:30 - 11:30</td>
-                    <td>Review tiến độ dự án A</td>
-                </tr>
+    <h1>Thực Hành Định Kiểu Danh Sách trong CSS</h1>
 
-                <tr>
-                    <td>13/10/2026</td>
-                    <td colspan="2">08:00 - 17:00: Hội thảo Kế hoạch Chiến lược (Họp kéo dài cả ngày)</td>
-                </tr>
+    <!-- 2. Thay đổi kiểu đánh dấu danh sách không thứ tự -->
+    <section>
+        <h2>Bài 2: Kiểu đánh dấu hình vuông (square)</h2>
+        <ul class="list-square">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+        </ul>
+    </section>
 
-                <tr>
-                    <td>14/10/2026</td>
-                    <td>14:00 - 15:30</td>
-                    <td>Phỏng vấn nhân sự mới</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <!-- 3. Thay đổi kiểu đánh dấu danh sách có thứ tự -->
+    <section>
+        <h2>Bài 3: Kiểu đánh số La Mã viết hoa (upper-roman)</h2>
+        <ol class="list-roman">
+            <li>Học HTML</li>
+            <li>Học CSS</li>
+            <li>Học JavaScript</li>
+            <li>Học Git</li>
+        </ol>
+    </section>
+
+    <!-- 4. Sử dụng hình ảnh làm dấu đánh dấu -->
+    <section>
+        <h2>Bài 4: Hình ảnh làm dấu đánh dấu</h2>
+        <ul class="list-image">
+            <li>Visual Studio Code</li>
+            <li>Google Chrome</li>
+            <li>GitHub</li>
+            <li>Git</li>
+        </ul>
+    </section>
+
+    <!-- 5. Thay đổi vị trí dấu đánh dấu -->
+    <section>
+        <h2>Bài 5: So sánh vị trí dấu đánh dấu (outside vs inside)</h2>
+        <h3>Position: outside (Mặc định)</h3>
+        <ul class="list-outside">
+            <li>Nội dung nằm bên ngoài khối dòng của thẻ li.</li>
+            <li>Nội dung dòng thứ 2 sẽ dóng hàng thẳng với chữ bên trên.</li>
+        </ul>
+
+        <h3>Position: inside</h3>
+        <ul class="list-inside">
+            <li>Nội dung nằm bên trong khối dòng của thẻ li.</li>
+            <li>Dấu đánh dấu đứng chung hàng với dòng chữ đầu tiên.</li>
+        </ul>
+    </section>
+
+    <!-- 6. Sử dụng thuộc tính rút gọn list-style -->
+    <section>
+        <h2>Bài 6: Thuộc tính rút gọn list-style</h2>
+        <ul class="list-shorthand">
+            <li>Mục 1: Thiết lập kiểu, vị trí và hình ảnh trong 1 dòng</li>
+            <li>Mục 2: Giúp mã CSS gọn gàng hơn</li>
+        </ul>
+    </section>
+
+    <!-- 7. Tạo kiểu danh sách với màu sắc -->
+    <section>
+        <h2>Bài 7: Danh sách với Màu sắc và Khoảng cách</h2>
+        <ul class="list-colored">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <!-- 8. Bài tập tổng hợp -->
+    <section>
+        <h2>Bài 8: Lộ trình học lập trình Web (Tổng hợp)</h2>
+        <ul class="web-roadmap">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+            <li>GitHub</li>
+        </ul>
+    </section>
+
 </body>
 </html>
