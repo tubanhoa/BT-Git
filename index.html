@@ -3,84 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Styles</title>
+    <title>Chèn hình ảnh trong HTML</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #e0f7fa, #f5f5f5);
-            color: #1f2937;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .card {
-            background: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            padding: 30px;
-        }
-
-        h1 {
-            margin: 0 0 20px;
-            color: #2563eb;
-            font-size: clamp(2rem, 4vw, 3rem);
             text-align: center;
+            margin-top: 50px;
+            background-color: #f9f9f9;
         }
-
-        p {
-            margin: 16px 0;
-            line-height: 1.7;
-            font-size: clamp(1rem, 2vw, 1.2rem);
-        }
-
-        .highlight {
-            color: #dc2626;
-            font-weight: bold;
-        }
-
-        .italic {
-            font-style: italic;
-            text-align: center;
-        }
-
-        .larger {
-            font-size: clamp(1.1rem, 2.2vw, 1.6rem);
-            text-decoration: underline;
-            color: #0f172a;
-        }
-
-        @media (max-width: 600px) {
-            .card {
-                padding: 20px 15px;
-                border-radius: 12px;
-            }
-
-            p {
-                line-height: 1.6;
-            }
+        img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <h1>Bài viết của tôi</h1>
 
-            <p class="highlight">Đây là đoạn văn được định dạng màu sắc</p>
+    <h1>Hình ảnh thiên nhiên yêu thích</h1>
 
-            <p class="italic">Tôi đang học HTML Styles</p>
+    <!-- Chèn hình ảnh kèm thuộc tính alt mô tả -->
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" 
+         alt="Bãi biển hoang sơ tuyệt đẹp với cát trắng mịn và nước biển xanh ngọc" 
+         width="600">
 
-            <p class="larger">Định dạng văn bản giúp trang web đẹp hơn và responsive hơn trên mọi thiết bị.</p>
-        </div>
-    </div>
 </body>
 </html>
