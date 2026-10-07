@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách sản phẩm</title>
+    <title>Lịch họp công ty</title>
     <style>
         * {
             box-sizing: border-box;
@@ -12,39 +12,38 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #f3f4f6, #eff6ff);
+            background: linear-gradient(135deg, #eff6ff, #f8fafc);
             color: #1f2937;
             padding: 30px 15px;
         }
 
-        .wrapper {
+        .container {
             max-width: 900px;
             margin: 0 auto;
             background: #ffffff;
             border-radius: 14px;
-            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-            padding: clamp(20px, 4vw, 30px);
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+            padding: clamp(20px, 3vw, 32px);
         }
 
         h1 {
-            margin: 0 0 20px;
+            margin: 0 0 18px;
             color: #1d4ed8;
-            font-size: clamp(1.8rem, 3vw, 2.5rem);
             text-align: center;
+            font-size: clamp(1.8rem, 3vw, 2.4rem);
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 15px;
-            overflow: hidden;
-            border-radius: 10px;
         }
 
         th, td {
             border: 1px solid #d1d5db;
             padding: 12px 14px;
             text-align: left;
+            vertical-align: top;
         }
 
         th {
@@ -61,12 +60,12 @@
             background: #eff6ff;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 640px) {
             body {
                 padding: 20px 10px;
             }
 
-            .wrapper {
+            .container {
                 padding: 15px 10px;
                 border-radius: 10px;
             }
@@ -79,37 +78,37 @@
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <h1>Danh sách sản phẩm</h1>
+    <div class="container">
+        <h1>Lịch họp công ty</h1>
 
         <table>
             <thead>
                 <tr>
-                    <th>Tên sản phẩm</th>
-                    <th>Giá</th>
-                    <th>Số lượng</th>
+                    <th>Ngày</th>
+                    <th>Giờ</th>
+                    <th>Nội dung cuộc họp</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Điện thoại iPhone 15</td>
-                    <td>22.990.000 VNĐ</td>
-                    <td>10</td>
+                    <td rowspan="2">12/10/2026</td>
+                    <td>08:30 - 10:00</td>
+                    <td>Họp giao ban đầu tuần</td>
                 </tr>
                 <tr>
-                    <td>Laptop Dell XPS 13</td>
-                    <td>31.500.000 VNĐ</td>
-                    <td>5</td>
+                    <td>10:30 - 11:30</td>
+                    <td>Review tiến độ dự án A</td>
                 </tr>
+
                 <tr>
-                    <td>Tai nghe Bluetooth Sony</td>
-                    <td>4.200.000 VNĐ</td>
-                    <td>15</td>
+                    <td>13/10/2026</td>
+                    <td colspan="2">08:00 - 17:00: Hội thảo Kế hoạch Chiến lược (Họp kéo dài cả ngày)</td>
                 </tr>
+
                 <tr>
-                    <td>Đồng hồ Apple Watch</td>
-                    <td>9.800.000 VNĐ</td>
-                    <td>8</td>
+                    <td>14/10/2026</td>
+                    <td>14:00 - 15:30</td>
+                    <td>Phỏng vấn nhân sự mới</td>
                 </tr>
             </tbody>
         </table>
