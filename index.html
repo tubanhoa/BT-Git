@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Món ăn yêu thích & Chuẩn bị du lịch</title>
+    <title>Liên kết yêu thích</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,38 +12,48 @@
             color: #333;
         }
         h1 {
-            color: #c0392b;
-        }
-        h2 {
-            color: #2980b9;
-            margin-top: 30px;
+            color: #2c3e50;
         }
         li {
-            margin-bottom: 6px;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <!-- Tiêu đề chính và danh sách không có thứ tự -->
-    <h1>Những món ăn yêu thích của tôi</h1>
-    <ul>
-        <li>Phở bò Hà Nội</li>
-        <li>Bún chả nướng</li>
-        <li>Bánh mì Sài Gòn</li>
-        <li>Cơm tấm sườn nướng</li>
-        <li>Gỏi cuốn tôm thịt</li>
-    </ul>
+    <!-- Tiêu đề chính -->
+    <h1>Liên kết yêu thích của tôi</h1>
 
-    <!-- Tiêu đề phụ và danh sách có thứ tự -->
-    <h2>Các bước chuẩn bị cho một chuyến du lịch</h2>
-    <ol>
-        <li>Xác định địa điểm, thời gian và số lượng người đi</li>
-        <li>Dự trù kinh phí chi tiết cho chuyến đi</li>
-        <li>Đặt trước vé tàu/xe/máy bay và phòng khách sạn</li>
-        <li>Lên lịch trình chi tiết các điểm tham quan và ăn uống</li>
-        <li>Chuẩn bị hành lý, giấy tờ tùy thân và các đồ dùng cá nhân</li>
-    </ol>
+    <!-- Danh sách liên kết -->
+    <ul>
+        <!-- 1. Trang web bên ngoài mở trong tab mới với target="_blank" -->
+        <li>
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Trang tìm kiếm Google (Mở tab mới)</a>
+        </li>
+
+        <!-- 2. Trang web bên ngoài khác -->
+        <li>
+            <a href="https://vi.wikipedia.org" target="_blank" rel="noopener noreferrer">Bách khoa toàn thư Wikipedia</a>
+        </li>
+
+        <!-- 3. Liên kết tới file HTML khác trong cùng thư mục -->
+        <li>
+            <a href="about.html">Xem trang Giới thiệu (about.html)</a>
+        </li>
+
+        <!-- 4. Liên kết gửi email -->
+        <li>
+            <a href="mailto:narukun2812@gmail.com">Gửi email liên hệ cho tôi (narukun2812@gmail.com)</a>
+        </li>
+    </ul>
 
 </body>
 </html>
